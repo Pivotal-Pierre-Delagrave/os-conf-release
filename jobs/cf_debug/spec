@@ -1,0 +1,10 @@
+---
+name: cf_debug
+
+templates:
+  pre-start.sh.erb: bin/pre-start
+
+properties:
+  filename: "/etc/profile.d/debug.sh"
+  lines:
+    - line: "export CF_TRACE=1"
